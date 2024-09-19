@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   </head>
   <body>
     <!-- Navbar -->
@@ -64,7 +66,7 @@
       </div>
     </nav>
     <!-- home section -->
-    <section class="w-full bg-slate-950">
+    <section class="home w-full bg-slate-950">
       <div class="container flex flex-col justify-center md:justify-evenly md:flex-row">
         <div class="caption flex flex-col gap-2 py-14 px-10 md:py-32 md:gap-4">
           <h2 class="text-slate-400 font-semibold text-xl text-center md:text-left">Pro.Beyond.</h2>
@@ -83,10 +85,10 @@
     </section>
 
     <!-- product section -->
-    <section class="w-full flex flex-col md:flex-row bg-black">
+    <section class="product w-full flex flex-col md:flex-row bg-black">
       <div class="left-content flex flex-col w-full md:w-1/2">
         <div class="top-content bg-white flex flex-col items-center md:flex-row gap-3 p-4 md:p-0">
-          <div class="image">
+          <div class="imagee">
             <img src="images/PlayStation.png" alt="" class="w-[200px] md:w-[513px]" />
           </div>
           <div class="caption flex gap-3 flex-col">
@@ -96,7 +98,7 @@
         </div>
         <div class="container-bottom flex flex-col md:flex-row">
           <div class="bottom-content flex flex-col md:flex-row items-center gap-4 w-full md:w-1/2 bg-slate-100 p-4">
-            <div class="image">
+            <div class="imagee">
               <img src="images/airpods-max.png" alt="" />
             </div>
             <div class="caption flex flex-col justify-center">
@@ -124,13 +126,14 @@
         <div class="caption flex flex-col w-1/2">
           <h2 class="text-2xl md:text-4xl text-center md:text-start">Macbook <span class="font-semibold">Air</span></h2>
           <p class="text-slate-400 text-sm text-center md:text-start">The new 15‑inch MacBook Air makes room for more of what you love with a spacious Liquid Retina display.</p>
+          <button class="border border-black text-black rounded-lg px-5 py-3 w-[184px] mx-auto mt-4 md:mx-0 hover:bg-black hover:text-white transition-all duration-500 ease-in-out">Shop Now</button>
         </div>
       </div>
     </section>
 
     <!-- category section -->
-    <section class="w-full bg-[#FAFAFA]">
-      <div class="container w-full p-2 md:p-12">
+    <section class="category w-full bg-[#FAFAFA]">
+      <div class="container w-full p-2 md:p-12 mx-auto">
         <div class="title flex justify-between w-full p-6 md:p-0">
           <h3 class="text-xl font-semibold">Browse By Category</h3>
           <div class="icon flex">
@@ -263,6 +266,262 @@
       </div>
     </section>
 
+    <!-- arrival section -->
+    <section class="arrival mt-24">
+      <div class="container w-full mx-auto">
+        <div class="title flex gap-6 px-6 md:px-12">
+          <h3 class="text-slate-400 text-center md:text-start font-medium cursor-pointer hover:text-black hover:underline underline-offset-4 transition-all duration-300 ease-in-out">New Arrival</h3>
+          <h3 class="text-slate-400 text-center md:text-start font-medium cursor-pointer hover:text-black hover:underline underline-offset-4 transition-all duration-300 ease-in-out">Bestseller</h3>
+          <h3 class="text-slate-400 text-center md:text-start font-medium cursor-pointer hover:text-black hover:underline underline-offset-4 transition-all duration-300 ease-in-out">Featured Products</h3>
+        </div>
+
+        <div class="container-card w-full flex flex-wrap gap-3 md:gap-6 p-2 md:p-12 justify-center items-center">
+          <div class="card w-[268px] h-[432px] rounded-xl bg-[#F6F6F6] py-12 px-4 flex flex-col gap-4 justify-center items-center relative">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 fill-slate-400 absolute right-4 top-4 hover:fill-red-500 transition-all duration-300 ease-in-out cursor-pointer" viewBox="0 0 256 256">
+              <path
+                d="M223,57a58.07,58.07,0,0,0-81.92-.1L128,69.05,114.91,56.86A58,58,0,0,0,33,139l89.35,90.66a8,8,0,0,0,11.4,0L223,139a58,58,0,0,0,0-82Zm-11.35,70.76L128,212.6,44.3,127.68a42,42,0,0,1,59.4-59.4l.2.2,18.65,17.35a8,8,0,0,0,10.9,0L152.1,68.48l.2-.2a42,42,0,1,1,59.36,59.44Z"></path>
+            </svg>
+
+            <div class="image w-[160px] h-[160px] mt-4">
+              <img src="images/iphone-14.png" alt="" />
+            </div>
+            <div class="title flex flex-col items-center gap-3 h-[160px]">
+              <h3 class="font-semibold text-sm text-center">Apple iPhone 14 Pro Max 128GB Deep Purple (MQ9T3RX/A)</h3>
+              <h2 class="font-bold text-2xl text-center">$898</h2>
+              <button class="border border-black text-black rounded-lg px-4 py-2 w-[180px] mx-auto mt-4 md:mx-0 hover:bg-black hover:text-white transition-all duration-500 ease-in-out">Buy Now</button>
+            </div>
+          </div>
+
+          <div class="card w-[268px] h-[432px] rounded-xl bg-[#F6F6F6] px-4 py-12 flex flex-col gap-4 justify-center items-center relative">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 fill-slate-400 absolute right-4 top-4 hover:fill-red-500 transition-all duration-300 ease-in-out cursor-pointer" viewBox="0 0 256 256">
+              <path
+                d="M223,57a58.07,58.07,0,0,0-81.92-.1L128,69.05,114.91,56.86A58,58,0,0,0,33,139l89.35,90.66a8,8,0,0,0,11.4,0L223,139a58,58,0,0,0,0-82Zm-11.35,70.76L128,212.6,44.3,127.68a42,42,0,0,1,59.4-59.4l.2.2,18.65,17.35a8,8,0,0,0,10.9,0L152.1,68.48l.2-.2a42,42,0,1,1,59.36,59.44Z"></path>
+            </svg>
+
+            <div class="image w-[160px h-[160px] mt-6">
+              <img src="images/camera.png" alt="" />
+            </div>
+            <div class="title flex flex-col items-center gap-3 h-[160px]">
+              <h3 class="font-semibold text-sm text-center">Blackmagic Pocket Cinema Camera 6k</h3>
+              <h2 class="font-bold text-2xl text-center">$2535</h2>
+              <button class="border border-black text-black rounded-lg px-4 py-2 w-[180px] mx-auto mt-4 md:mx-0 hover:bg-black hover:text-white transition-all duration-500 ease-in-out">Buy Now</button>
+            </div>
+          </div>
+
+          <div class="card w-[268px] h-[432px] rounded-xl bg-[#F6F6F6] px-4 py-12 flex flex-col gap-4 justify-center items-center relative">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 fill-slate-400 absolute right-4 top-4 hover:fill-red-500 transition-all duration-300 ease-in-out cursor-pointer" viewBox="0 0 256 256">
+              <path
+                d="M223,57a58.07,58.07,0,0,0-81.92-.1L128,69.05,114.91,56.86A58,58,0,0,0,33,139l89.35,90.66a8,8,0,0,0,11.4,0L223,139a58,58,0,0,0,0-82Zm-11.35,70.76L128,212.6,44.3,127.68a42,42,0,0,1,59.4-59.4l.2.2,18.65,17.35a8,8,0,0,0,10.9,0L152.1,68.48l.2-.2a42,42,0,1,1,59.36,59.44Z"></path>
+            </svg>
+
+            <div class="mt-6 w-[160px] h-[160px]">
+              <img src="images/apple-watch.png" alt="" />
+            </div>
+            <div class="title flex flex-col items-center gap-3 h-[160px]">
+              <h3 class="font-semibold text-sm text-center">Apple Watch Series 9 GPS 41mm Starlight Aluminium Case</h3>
+              <h2 class="font-bold text-2xl text-center">$399</h2>
+              <button class="border border-black text-black rounded-lg px-4 py-2 w-[180px] mx-auto mt-4 md:mx-0 hover:bg-black hover:text-white transition-all duration-500 ease-in-out">Buy Now</button>
+            </div>
+          </div>
+
+          <div class="card w-[268px] h-[432px] rounded-xl bg-[#F6F6F6] px-4 py-12 flex flex-col gap-4 justify-center items-center relative">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 fill-slate-400 absolute right-4 top-4 hover:fill-red-500 transition-all duration-300 ease-in-out cursor-pointer" viewBox="0 0 256 256">
+              <path
+                d="M223,57a58.07,58.07,0,0,0-81.92-.1L128,69.05,114.91,56.86A58,58,0,0,0,33,139l89.35,90.66a8,8,0,0,0,11.4,0L223,139a58,58,0,0,0,0-82Zm-11.35,70.76L128,212.6,44.3,127.68a42,42,0,0,1,59.4-59.4l.2.2,18.65,17.35a8,8,0,0,0,10.9,0L152.1,68.48l.2-.2a42,42,0,1,1,59.36,59.44Z"></path>
+            </svg>
+
+            <div class="mt-6 w-[160px] h-[160px]">
+              <img src="images/airpods-max.png" alt="" />
+            </div>
+            <div class="title flex flex-col items-center gap-3 h-[160px] mt-4">
+              <h3 class="font-semibold text-sm text-center">AirPods Max Silver</h3>
+              <h2 class="font-bold text-2xl text-center">$549</h2>
+              <button class="border border-black text-black rounded-lg px-4 py-2 w-[180px] mx-auto mt-4 md:mx-0 hover:bg-black hover:text-white transition-all duration-500 ease-in-out">Buy Now</button>
+            </div>
+          </div>
+
+          <div class="card w-[268px] h-[432px] rounded-xl bg-[#F6F6F6] px-5 py-12 flex flex-col gap-4 justify-center items-center relative">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 fill-slate-400 absolute right-4 top-4 hover:fill-red-500 transition-all duration-300 ease-in-out cursor-pointer" viewBox="0 0 256 256">
+              <path
+                d="M223,57a58.07,58.07,0,0,0-81.92-.1L128,69.05,114.91,56.86A58,58,0,0,0,33,139l89.35,90.66a8,8,0,0,0,11.4,0L223,139a58,58,0,0,0,0-82Zm-11.35,70.76L128,212.6,44.3,127.68a42,42,0,0,1,59.4-59.4l.2.2,18.65,17.35a8,8,0,0,0,10.9,0L152.1,68.48l.2-.2a42,42,0,1,1,59.36,59.44Z"></path>
+            </svg>
+            <div class="w-[160px] h-[160px] mt-6">
+              <img src="images/iphone-16pro.png" alt="" class="scale-110" />
+            </div>
+            <div class="title flex flex-col items-center gap-3 h-[160px]">
+              <h3 class="font-semibold text-sm text-center">Apple iPhone 16 Pro 1TB Pure Gold (Model MQ9T3RX/A)</h3>
+              <h2 class="font-bold text-2xl text-center">$999</h2>
+              <button class="border border-black text-black rounded-lg px-4 py-2 w-[180px] mx-auto mt-4 md:mx-0 hover:bg-black hover:text-white transition-all duration-500 ease-in-out">Buy Now</button>
+            </div>
+          </div>
+          <div class="card w-[268px] h-[432px] rounded-xl bg-[#F6F6F6] px-5 py-12 flex flex-col gap-4 justify-center items-center relative">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 fill-slate-400 absolute right-4 top-4 hover:fill-red-500 transition-all duration-300 ease-in-out cursor-pointer" viewBox="0 0 256 256">
+              <path
+                d="M223,57a58.07,58.07,0,0,0-81.92-.1L128,69.05,114.91,56.86A58,58,0,0,0,33,139l89.35,90.66a8,8,0,0,0,11.4,0L223,139a58,58,0,0,0,0-82Zm-11.35,70.76L128,212.6,44.3,127.68a42,42,0,0,1,59.4-59.4l.2.2,18.65,17.35a8,8,0,0,0,10.9,0L152.1,68.48l.2-.2a42,42,0,1,1,59.36,59.44Z"></path>
+            </svg>
+
+            <div class="w-[160px] h-[160px] mt-6">
+              <img src="images/iphone-15promax.png" alt="" class="scale-125" />
+            </div>
+            <div class="title flex flex-col items-center gap-3 h-[160px]">
+              <h3 class="font-semibold text-sm text-center">Apple iPhone 15 Pro Max 512GB Silver (MA10TCB/D)</h3>
+              <h2 class="font-bold text-2xl text-center">$955</h2>
+              <button class="border border-black text-black rounded-lg px-4 py-2 w-[180px] mx-auto mt-4 md:mx-0 hover:bg-black hover:text-white transition-all duration-500 ease-in-out">Buy Now</button>
+            </div>
+          </div>
+
+          <div class="card w-[268px] h-[432px] rounded-xl bg-[#F6F6F6] px-5 py-12 flex flex-col gap-4 justify-center items-center relative">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 fill-slate-400 absolute right-4 top-4 hover:fill-red-500 transition-all duration-300 ease-in-out cursor-pointer" viewBox="0 0 256 256">
+              <path
+                d="M223,57a58.07,58.07,0,0,0-81.92-.1L128,69.05,114.91,56.86A58,58,0,0,0,33,139l89.35,90.66a8,8,0,0,0,11.4,0L223,139a58,58,0,0,0,0-82Zm-11.35,70.76L128,212.6,44.3,127.68a42,42,0,0,1,59.4-59.4l.2.2,18.65,17.35a8,8,0,0,0,10.9,0L152.1,68.48l.2-.2a42,42,0,1,1,59.36,59.44Z"></path>
+            </svg>
+
+            <div class="w-[160px] h-[160px] mt-6">
+              <img src="images/apple-ipad.png" alt="" />
+            </div>
+            <div class="title flex flex-col items-center gap-3 h-[160px]">
+              <h3 class="font-semibold text-sm text-center">Apple iPad 9 10.2" 64GB Wi-Fi Silver (MK2L3) 2021</h3>
+              <h2 class="font-bold text-2xl text-center">$398</h2>
+              <button class="border border-black text-black rounded-lg px-4 py-2 w-[180px] mx-auto mt-4 md:mx-0 hover:bg-black hover:text-white transition-all duration-500 ease-in-out">Buy Now</button>
+            </div>
+          </div>
+
+          <div class="card w-[268px] h-[432px] rounded-xl bg-[#F6F6F6] px-4 py-12 flex flex-col gap-4 justify-center items-center relative">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 fill-slate-400 absolute right-4 top-4 hover:fill-red-500 transition-all duration-300 ease-in-out cursor-pointer" viewBox="0 0 256 256">
+              <path
+                d="M223,57a58.07,58.07,0,0,0-81.92-.1L128,69.05,114.91,56.86A58,58,0,0,0,33,139l89.35,90.66a8,8,0,0,0,11.4,0L223,139a58,58,0,0,0,0-82Zm-11.35,70.76L128,212.6,44.3,127.68a42,42,0,0,1,59.4-59.4l.2.2,18.65,17.35a8,8,0,0,0,10.9,0L152.1,68.48l.2-.2a42,42,0,1,1,59.36,59.44Z"></path>
+            </svg>
+
+            <div class="w-[160px] h-[160px] mt-6">
+              <img src="images/Iphone-13mini.png" alt="" />
+            </div>
+            <div class="title flex flex-col items-center gap-3 h-[160px]">
+              <h3 class="font-semibold text-sm text-center">Apple iPhone 13 mini 128GB Pink (MLK23)</h3>
+              <h2 class="font-bold text-2xl text-center">$789</h2>
+              <button class="border border-black text-black rounded-lg px-4 py-2 w-[180px] mx-auto mt-4 md:mx-0 hover:bg-black hover:text-white transition-all duration-500 ease-in-out">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- carousel section -->
+    <section>
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="container w-full flex flex-col justify-center items-center bg-slate-950 px-24 py-6 absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+              <div class="image">
+                <img src="images/macbook-air.png" alt="" class="w-[539px]" />
+              </div>
+              <div class="title flex flex-col items-center gap-4">
+                <h2 class="text-white text-4xl">Macbook <span class="font-semibold">Air</span></h2>
+                <p class="text-slate-300 text-[16px] text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates cumque reprehenderit eligendi modi ad nesciunt sed minima, accusamus nostrum suscipit aperiam non dolor aliquid corrupti consequatur ab dolorum ut nisi!
+                </p>
+                <button class="px-4 py-2 border border-white text-white rounded-md font-medium hover:bg-white hover:text-black transition-all duration-300 ease-in-out">Shop Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="container w-full flex flex-col justify-center items-center bg-slate-950 px-24 py-6 absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+              <div class="image">
+                <img src="images/macbook-air.png" alt="" class="w-[539px]" />
+              </div>
+              <div class="title flex flex-col items-center gap-4">
+                <h2 class="text-white text-4xl">Macbook <span class="font-semibold">Air</span></h2>
+                <p class="text-slate-300 text-[16px] text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates cumque reprehenderit eligendi modi ad nesciunt sed minima, accusamus nostrum suscipit aperiam non dolor aliquid corrupti consequatur ab dolorum ut nisi!
+                </p>
+                <button class="px-4 py-2 border border-white text-white rounded-md font-medium hover:bg-white hover:text-black transition-all duration-300 ease-in-out">Shop Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="container w-full flex flex-col justify-center items-center bg-slate-950 px-24 py-6 absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+              <div class="image">
+                <img src="images/macbook-air.png" alt="" class="w-[539px]" />
+              </div>
+              <div class="title flex flex-col items-center gap-4">
+                <h2 class="text-white text-4xl">Macbook <span class="font-semibold">Air</span></h2>
+                <p class="text-slate-300 text-[16px] text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates cumque reprehenderit eligendi modi ad nesciunt sed minima, accusamus nostrum suscipit aperiam non dolor aliquid corrupti consequatur ab dolorum ut nisi!
+                </p>
+                <button class="px-4 py-2 border border-white text-white rounded-md font-medium hover:bg-white hover:text-black transition-all duration-300 ease-in-out">Shop Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="container w-full flex flex-col justify-center items-center bg-slate-950 px-24 py-6 absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+              <div class="image">
+                <img src="images/macbook-air.png" alt="" class="w-[539px]" />
+              </div>
+              <div class="title flex flex-col items-center gap-4">
+                <h2 class="text-white text-4xl">Macbook <span class="font-semibold">Air</span></h2>
+                <p class="text-slate-300 text-[16px] text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates cumque reprehenderit eligendi modi ad nesciunt sed minima, accusamus nostrum suscipit aperiam non dolor aliquid corrupti consequatur ab dolorum ut nisi!
+                </p>
+                <button class="px-4 py-2 border border-white text-white rounded-md font-medium hover:bg-white hover:text-black transition-all duration-300 ease-in-out">Shop Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="container w-full flex flex-col justify-center items-center bg-slate-950 px-24 py-6 absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+              <div class="image">
+                <img src="images/macbook-air.png" alt="" class="w-[539px]" />
+              </div>
+              <div class="title flex flex-col items-center gap-4">
+                <h2 class="text-white text-4xl">Macbook <span class="font-semibold">Air</span></h2>
+                <p class="text-slate-300 text-[16px] text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates cumque reprehenderit eligendi modi ad nesciunt sed minima, accusamus nostrum suscipit aperiam non dolor aliquid corrupti consequatur ab dolorum ut nisi!
+                </p>
+                <button class="px-4 py-2 border border-white text-white rounded-md font-medium hover:bg-white hover:text-black transition-all duration-300 ease-in-out">Shop Now</button>
+              </div>
+            </div>
+          </div>
+          ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination fill-black"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev fill-black"></div>
+        <div class="swiper-button-next fill-black"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </section>
     <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module">
+      import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
+
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        direction: "horizontal",
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+      // const swiper = new Swiper(...)
+    </script>
   </body>
 </html>
