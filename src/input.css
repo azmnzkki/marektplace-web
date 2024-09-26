@@ -11,4 +11,19 @@
 .swiper {
   width: 95vw;
   height: 100vh;
+  /* padding: 10px !important; */
+}
+
+.back {
+  margin-left: 10px !important;
+}
+
+.continue {
+  margin-right: 10px !important;
+}
+.back,
+.continue {
+  color: black !important;
+  width: 20px !important;
+  height: 20px !important;
 }
