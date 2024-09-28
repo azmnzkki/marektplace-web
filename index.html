@@ -30,10 +30,10 @@
 
         <!-- Menu Items -->
         <ul class="hidden lg:flex gap-6">
-          <li><a href="" class="font-medium text-slate-900 hover:text-slate-500 transition-all duration-300 ease-in-out">Home</a></li>
-          <li><a href="" class="font-medium text-slate-900 hover:text-slate-500 transition-all duration-300 ease-in-out">About</a></li>
-          <li><a href="" class="font-medium text-slate-900 hover:text-slate-500 transition-all duration-300 ease-in-out">Contact Us</a></li>
-          <li><a href="" class="font-medium text-slate-900 hover:text-slate-500 transition-all duration-300 ease-in-out">Blog</a></li>
+          <li><a href="index.html" class="font-medium text-slate-900 hover:text-slate-500 transition-all duration-300 ease-in-out">Home</a></li>
+          <li><a href="about.html" class="font-medium text-slate-900 hover:text-slate-500 transition-all duration-300 ease-in-out">About</a></li>
+          <li><a href="product.html" class="font-medium text-slate-900 hover:text-slate-500 transition-all duration-300 ease-in-out">Product</a></li>
+          <li><a href="partner.html" class="font-medium text-slate-900 hover:text-slate-500 transition-all duration-300 ease-in-out">Partner</a></li>
           <li>
             <svg xmlns="http://www.w3.org/2000/svg" class="w-6 fill-black hover:fill-red-500 transition-all duration-300 ease-in-out cursor-pointer" viewBox="0 0 256 256">
               <path
@@ -539,45 +539,64 @@
         <img src="images/top-image.png" alt="" class="absolute bottom-80 -left-8 md:bottom-64 w-32 md:w-[237px]" />
       </div>
       <div class="right-image relative">
-        <img src="images/watch-bottom.png" alt="" class="absolute -right-10 bottom-0 w-52 md:w-[340px]" />
+        <img src="images/watch-bottom.png" alt="" class="absolute -right-12 bottom-0 w-52 md:w-[340px]" />
         <img src="images/phone-top.png" alt="" class="absolute right-0 bottom-64 md:bottom-28 w-24 md:w-[175px]" />
       </div>
     </section>
 
     <!-- footer -->
-    <footer class="w-full bg-black text-white">
-      <div class="container px-10 py-24 flex gap-32 justify-center">
-        <div class="left-content flex flex-col gap-10 w-[384px]">
-          <img src="images/logo-white.png" alt="" class="w-24" />
-          <p class="text-sm">We are a residential interior design firm located in Portland. Our boutique-studio offers more than</p>
-          <div class="medsos flex gap-4 mt-16">
-            <img src="images/Twitter.png" alt="" />
-            <img src="images/Vector.png" alt="" />
-            <img src="images/Tiktok.png" alt="" />
-            <img src="images/Instagram.png" alt="" />
+
+    <footer class="bg-black w-full">
+      <div class="container w-full gap-16 px-10 py-14 flex justify-between flex-col md:flex-row">
+        <div class="first-content flex-col gap-14 w-full md:w-1/4 justify-between">
+          <div class="images">
+            <img src="images/logo-white.png" alt="" />
+          </div>
+          <div class="caption mt-6">
+            <p class="text-sm text-slate-400">We are a residential interior design firm located in Portland. Our boutique-studio offers more than</p>
           </div>
         </div>
-        <div class="center- flex flex-col gap-6">
-          <h2 class="text-xl font-semibold hover:underline hover:underline-offset-8 transition-all duration-500 ease-in-out cursor-pointer">Services</h2>
-          <p class="text-sm font-light hover:text-sky-400 transition-all duration-300 ease-in-out cursor-pointer mt-4">Bonus Program</p>
-          <p class="text-sm font-light hover:text-sky-400 transition-all duration-300 ease-in-out cursor-pointer">Gift Cards</p>
-          <p class="text-sm font-light hover:text-sky-400 transition-all duration-300 ease-in-out cursor-pointer">Credit And Payment</p>
-          <p class="text-sm font-light hover:text-sky-400 transition-all duration-300 ease-in-out cursor-pointer">Non Cash Account</p>
-          <p class="text-sm font-light hover:text-sky-400 transition-all duration-300 ease-in-out cursor-pointer">Payment</p>
+        <div class="second-content text-white">
+          <h2 class="text-xl">Service</h2>
+          <div class="child flex flex-col gap-6 mt-6">
+            <p class="text-[14px] font-extralight">Bonus Program</p>
+            <p class="text-[14px] font-extralight">Gift Cards</p>
+            <p class="text-[14px] font-extralight">Credit And Payments</p>
+            <p class="text-[14px] font-extralight">Service Contracts</p>
+            <p class="text-[14px] font-extralight">Non Cash Acount</p>
+            <p class="text-[14px] font-extralight">Payment</p>
+          </div>
         </div>
-        <div class="right-content flex flex-col gap-6">
-          <h2 class="text-xl font-semibold hover:underline hover:underline-offset-8 transition-all duration-500 ease-in-out cursor-pointer">Assistance to the buyer</h2>
-          <p class="text-sm font-light hover:text-sky-400 transition-all duration-300 ease-in-out cursor-pointer mt-4">Find And Order</p>
-          <p class="text-sm font-light hover:text-sky-400 transition-all duration-300 ease-in-out cursor-pointer">Tems Of Delivery</p>
-          <p class="text-sm font-light hover:text-sky-400 transition-all duration-300 ease-in-out cursor-pointer">Exchange and Returnd Of Goods</p>
-          <p class="text-sm font-light hover:text-sky-400 transition-all duration-300 ease-in-out cursor-pointer">Guarante</p>
-          <p class="text-sm font-light hover:text-sky-400 transition-all duration-300 ease-in-out cursor-pointer">Frequently Asked Questions</p>
-          <p class="text-sm font-light hover:text-sky-400 transition-all duration-300 ease-in-out cursor-pointer">Terms Of use Of The Site</p>
+        <div class="second-content text-white">
+          <h2 class="text-xl">Asistance To The Buyer</h2>
+          <div class="child flex flex-col gap-6 mt-6">
+            <p class="text-[14px] font-extralight">Find And Order</p>
+            <p class="text-[14px] font-extralight">Terms Of Delivery</p>
+            <p class="text-[14px] font-extralight">Exchange And Return of Goods</p>
+            <p class="text-[14px] font-extralight">Guarantee</p>
+            <p class="text-[14px] font-extralight">Frequently Asked Questions</p>
+            <p class="text-[14px] font-extralight">Terms Of Use Of The Site</p>
+          </div>
+        </div>
+
+        <div class="sosmed flex flex-col text-white">
+          <h2 class="text-xl font-semibold">Sosial Media</h2>
+
+          <div class="child flex flex-col gap-6 mt-6">
+            <p class="text-[14px] font-extralight w-12">Instagram</p>
+
+            <p class="text-[14px] font-extralight w-12">Twitter</p>
+
+            <p class="text-[14px] font-extralight w-12">Tiktok</p>
+
+            <p class="text-[14px] font-extralight w-12">Facebook</p>
+          </div>
         </div>
       </div>
+      <div class="bottom-conent relative">
+        <p class="text-white absolute bottom-0 left-auto right-auto">Copyright Cyber Indo 2024</p>
+      </div>
     </footer>
-
     <script src="script.js"></script>
-    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
   </body>
 </html>
