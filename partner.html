@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Partner</title>
+    <link rel="stylesheet" href="src/output.css" />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav id="navbar" class="bg-white shadow-md fixed top-0 left-0 w-full z-10 transition-transform duration-300">
+      <div class="container mx-auto px-4 py-5 flex justify-between items-center">
+        <!-- Logo -->
+        <div class="logo cursor-pointer"><img src="images/Logo.png" alt="" /></div>
+
+        <!-- Mobile Menu Button -->
+        <div class="block lg:hidden">
+          <button id="menu-toggle" class="text-gray-800 focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Menu Items -->
+        <ul class="hidden lg:flex gap-6">
+          <li><a href="index.html" class="font-medium text-slate-900 hover:text-slate-500 transition-all duration-300 ease-in-out">Home</a></li>
+          <li><a href="about.html" class="font-medium text-slate-900 hover:text-slate-500 transition-all duration-300 ease-in-out">About</a></li>
+          <li><a href="product.html" class="font-medium text-slate-900 hover:text-slate-500 transition-all duration-300 ease-in-out">Product</a></li>
+          <li><a href="partner.html" class="font-medium text-slate-900 hover:text-slate-500 transition-all duration-300 ease-in-out">Partner</a></li>
+          <!-- Icons -->
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 fill-black hover:fill-red-500 transition-all duration-300 ease-in-out cursor-pointer" viewBox="0 0 256 256">
+              <path
+                d="M178,40c-20.65,0-38.73,8.88-50,23.89C116.73,48.88,98.65,40,78,40a62.07,62.07,0,0,0-62,62c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,228.66,240,172,240,102A62.07,62.07,0,0,0,178,40ZM128,214.8C109.74,204.16,32,155.69,32,102A46.06,46.06,0,0,1,78,56c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,155.61,146.24,204.15,128,214.8Z"></path>
+            </svg>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 fill-black hover:fill-green-500 transition-all duration-300 ease-in-out cursor-pointer" viewBox="0 0 256 256">
+              <path
+                d="M230.14,58.87A8,8,0,0,0,224,56H62.68L56.6,22.57A8,8,0,0,0,48.73,16H24a8,8,0,0,0,0,16h18L67.56,172.29a24,24,0,0,0,5.33,11.27,28,28,0,1,0,44.4,8.44h45.42A27.75,27.75,0,0,0,160,204a28,28,0,1,0,28-28H91.17a8,8,0,0,1-7.87-6.57L80.13,152h116a24,24,0,0,0,23.61-19.71l12.16-66.86A8,8,0,0,0,230.14,58.87ZM104,204a12,12,0,1,1-12-12A12,12,0,0,1,104,204Zm96,0a12,12,0,1,1-12-12A12,12,0,0,1,200,204Zm4-74.57A8,8,0,0,1,196.1,136H77.22L65.59,72H214.41Z"></path>
+            </svg>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 fill-black hover:fill-sky-500 transition-all duration-300 ease-in-out cursor-pointer" viewBox="0 0 256 256">
+              <path
+                d="M230.92,212c-15.23-26.33-38.7-45.21-66.09-54.16a72,72,0,1,0-73.66,0C63.78,166.78,40.31,185.66,25.08,212a8,8,0,1,0,13.85,8c18.84-32.56,52.14-52,89.07-52s70.23,19.44,89.07,52a8,8,0,1,0,13.85-8ZM72,96a56,56,0,1,1,56,56A56.06,56.06,0,0,1,72,96Z"></path>
+            </svg>
+          </li>
+        </ul>
+      </div>
+      <!-- Mobile Menu-->
+      <div id="mobile-menu" class="lg:hidden hidden px-4 pb-4">
+        <ul class="flex flex-col gap-4">
+          <li><a href="" class="text-slate-800 font-medium block">Home</a></li>
+          <li><a href="" class="text-slate-800 font-medium block">About</a></li>
+          <li><a href="" class="text-slate-800 font-medium block">Contact Us</a></li>
+          <li><a href="" class="text-slate-800 font-medium block">Blog</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="w-full mt-32">
+      <div class="container w-full mx-auto flex flex-col justify-center items-center">
+        <h1 class="text-3xl font-semibold">Partner Kami</h1>
+        <div class="logos flex flex-col md:flex-row gap-12 max-w-xl items-center justify-center mt-12 md:mt-6">
+          <img src="images/cyber-partner.png" alt="" class="cyber w-64 h-fit" />
+          <h1 class="text-3xl font-bold">X</h1>
+          <img src="images/apple-partner.png" alt="" class="w-64" />
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-black w-full mt-32">
+      <div class="container w-full gap-16 px-10 py-14 flex justify-between flex-col md:flex-row">
+        <div class="first-content flex-col gap-14 w-full md:w-1/4 justify-between">
+          <div class="images">
+            <img src="images/logo-white.png" alt="" />
+          </div>
+          <div class="caption mt-6">
+            <p class="text-sm text-slate-400">We are a residential interior design firm located in Portland. Our boutique-studio offers more than</p>
+          </div>
+        </div>
+        <div class="second-content text-white">
+          <h2 class="text-xl">Service</h2>
+          <div class="child flex flex-col gap-6 mt-6">
+            <p class="text-[14px] font-extralight">Bonus Program</p>
+            <p class="text-[14px] font-extralight">Gift Cards</p>
+            <p class="text-[14px] font-extralight">Credit And Payments</p>
+            <p class="text-[14px] font-extralight">Service Contracts</p>
+            <p class="text-[14px] font-extralight">Non Cash Acount</p>
+            <p class="text-[14px] font-extralight">Payment</p>
+          </div>
+        </div>
+        <div class="second-content text-white">
+          <h2 class="text-xl">Asistance To The Buyer</h2>
+          <div class="child flex flex-col gap-6 mt-6">
+            <p class="text-[14px] font-extralight">Find And Order</p>
+            <p class="text-[14px] font-extralight">Terms Of Delivery</p>
+            <p class="text-[14px] font-extralight">Exchange And Return of Goods</p>
+            <p class="text-[14px] font-extralight">Guarantee</p>
+            <p class="text-[14px] font-extralight">Frequently Asked Questions</p>
+            <p class="text-[14px] font-extralight">Terms Of Use Of The Site</p>
+          </div>
+        </div>
+
+        <div class="sosmed flex flex-col text-white">
+          <h2 class="text-xl font-semibold">Sosial Media</h2>
+
+          <div class="child flex flex-col gap-6 mt-6">
+            <p class="text-[14px] font-extralight w-12">Instagram</p>
+
+            <p class="text-[14px] font-extralight w-12">Twitter</p>
+
+            <p class="text-[14px] font-extralight w-12">Tiktok</p>
+
+            <p class="text-[14px] font-extralight w-12">Facebook</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

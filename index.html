@@ -15,11 +15,12 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="bg-white shadow-md">
+    <nav id="navbar" class="bg-white shadow-md fixed top-0 left-0 w-full transition-transform duration-300 z-[9999]">
       <div class="container mx-auto px-4 py-5 flex justify-between items-center">
         <!-- Logo -->
         <div class="logo cursor-pointer"><img src="images/Logo.png" alt="" /></div>
 
+        <!-- Mobile Menu Button -->
         <div class="block lg:hidden">
           <button id="menu-toggle" class="text-gray-800 focus:outline-none">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -34,6 +35,7 @@
           <li><a href="about.html" class="font-medium text-slate-900 hover:text-slate-500 transition-all duration-300 ease-in-out">About</a></li>
           <li><a href="product.html" class="font-medium text-slate-900 hover:text-slate-500 transition-all duration-300 ease-in-out">Product</a></li>
           <li><a href="partner.html" class="font-medium text-slate-900 hover:text-slate-500 transition-all duration-300 ease-in-out">Partner</a></li>
+          <!-- Icons -->
           <li>
             <svg xmlns="http://www.w3.org/2000/svg" class="w-6 fill-black hover:fill-red-500 transition-all duration-300 ease-in-out cursor-pointer" viewBox="0 0 256 256">
               <path
@@ -54,7 +56,6 @@
           </li>
         </ul>
       </div>
-
       <!-- Mobile Menu-->
       <div id="mobile-menu" class="lg:hidden hidden px-4 pb-4">
         <ul class="flex flex-col gap-4">
@@ -65,6 +66,7 @@
         </ul>
       </div>
     </nav>
+
     <!-- home section -->
     <section class="home w-full bg-slate-950">
       <div class="container flex flex-col justify-center md:justify-evenly md:flex-row">
@@ -592,9 +594,6 @@
             <p class="text-[14px] font-extralight w-12">Facebook</p>
           </div>
         </div>
-      </div>
-      <div class="bottom-conent relative">
-        <p class="text-white absolute bottom-0 left-auto right-auto">Copyright Cyber Indo 2024</p>
       </div>
     </footer>
     <script src="script.js"></script>

@@ -5,24 +5,19 @@ menuToggle.addEventListener("click", () => {
   mobileMenu.classList.toggle("hidden");
 });
 
-const swiper = new Swiper(".swiper", {
-  // Optional parameters
-  direction: "vertical",
-  loop: true,
+let lastScrollTop = 0;
+const navbar = document.getElementById("navbar");
 
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
-  },
+window.addEventListener("scroll", function () {
+  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-  // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
+  if (scrollTop > lastScrollTop) {
+    // Scroll ke bawah
+    navbar.style.transform = "translateY(-100%)"; // Menghilangkan navbar
+  } else {
+    // Scroll ke atas
+    navbar.style.transform = "translateY(0)"; // Menampilkan navbar
+  }
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: ".swiper-scrollbar",
-  },
+  lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Menghindari nilai negatif pada scrollTop
 });
