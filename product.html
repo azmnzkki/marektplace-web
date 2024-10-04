@@ -15,7 +15,7 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav id="navbar" class="bg-white shadow-md fixed top-0 left-0 w-full z-[9999] transition-transform duration-300">
+    <nav id="navbar" class="bg-white shadow-md fixed top-0 left-0 w-full z-[999] md:z-[9999] transition-transform duration-300">
       <div class="container mx-auto px-4 py-5 flex justify-between items-center">
         <!-- Logo -->
         <div class="logo cursor-pointer"><img src="images/Logo.png" alt="" /></div>
@@ -57,24 +57,23 @@
         </ul>
       </div>
       <!-- Mobile Menu-->
-      <div id="mobile-menu" class="lg:hidden hidden px-4 pb-4">
+      <div id="mobile-menu" class="lg:hidden hidden px-4 pb-4 z-[999]">
         <ul class="flex flex-col gap-4">
-          <li><a href="" class="text-slate-800 font-medium block">Home</a></li>
-          <li><a href="" class="text-slate-800 font-medium block">About</a></li>
-          <li><a href="" class="text-slate-800 font-medium block">Contact Us</a></li>
-          <li><a href="" class="text-slate-800 font-medium block">Blog</a></li>
+          <li><a href="index.html" class="text-slate-800 font-medium block">Home</a></li>
+          <li><a href="about.html" class="text-slate-800 font-medium block">About</a></li>
+          <li><a href="product.html" class="text-slate-800 font-medium block">Product</a></li>
+          <li><a href="partner.html" class="text-slate-800 font-medium block">Partner</a></li>
         </ul>
       </div>
     </nav>
 
-    <aside class="py-4 absolute z-[999] -translate-x-full md:translate-x-0 mt-20 md:mt-12">
-      <button class="md:hidden">
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
-          <path
-            d="M165.66,101.66,139.31,128l26.35,26.34a8,8,0,0,1-11.32,11.32L128,139.31l-26.34,26.35a8,8,0,0,1-11.32-11.32L116.69,128,90.34,101.66a8,8,0,0,1,11.32-11.32L128,116.69l26.34-26.35a8,8,0,0,1,11.32,11.32ZM232,128A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"></path>
-        </svg>
-      </button>
-      <div class="bg-white p-6 rounded-lg shadow-lg w-64">
+    <aside id="sidebar" class="h-screen fixed md:absolute top-0 md:top-12 md:mt-8 md:py-4 w-full md:w-fit z-[999] md:translate-x-0 transition-all duration-500 ease-in-out">
+      <div class="bg-white p-6 rounded-lg shadow-lg w-full h-screen overflow-y-scroll md:w-64">
+        <button id="closeSidebar" class="close md:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 fill-gray-700 mb-6" viewBox="0 0 256 256">
+            <path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path>
+          </svg>
+        </button>
         <!-- Price Filter -->
         <div class="mb-6">
           <label class="block text-gray-700 font-bold mb-2">From</label>
@@ -184,13 +183,13 @@
     <section class="arrival md:ml-64 py-4 mt-20 md:mt-12">
       <div class="container w-full mx-auto">
         <div class="px-4 flex items-center gap-3 md:hidden">
-          <button>
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
+          <button id="openSidebar">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 fill-gray-700" viewBox="0 0 256 256">
               <path
                 d="M224,128a8,8,0,0,1-8,8H112a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM112,72H216a8,8,0,0,0,0-16H112a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16ZM34.34,141.66a8,8,0,0,0,11.32,0l40-40a8,8,0,0,0,0-11.32l-40-40A8,8,0,0,0,34.34,61.66L68.69,96,34.34,130.34A8,8,0,0,0,34.34,141.66Z"></path>
             </svg>
           </button>
-          <h2 class="text-sm font-semibold">Category</h2>
+          <h2 class="text-sm font-semibold text-gray-700">Category</h2>
         </div>
         <div class="container-card w-full flex flex-wrap gap-6 md:gap-6 justify-center items-center mt-12">
           <div class="card w-[150px] md:w-[268px] h-[200x] md:h-[432px] rounded-xl bg-[#F6F6F6] py-12 px-4 flex flex-col gap-4 justify-center items-center relative">
@@ -208,6 +207,7 @@
               <button class="border border-black text-black text-sm rounded-lg px-4 py-2 w- mx-auto mt-4 md:mx-0 hover:bg-black hover:text-white transition-all duration-500 ease-in-out">Buy Now</button>
             </div>
           </div>
+
           <div class="card w-[150px] md:w-[268px] h-[200x] md:h-[432px] rounded-xl bg-[#F6F6F6] py-12 px-4 flex flex-col gap-4 justify-center items-center relative">
             <svg xmlns="http://www.w3.org/2000/svg" class="w-6 fill-slate-400 absolute right-4 top-4 hover:fill-red-500 transition-all duration-300 ease-in-out cursor-pointer" viewBox="0 0 256 256">
               <path
@@ -215,14 +215,15 @@
             </svg>
 
             <div class="image w-full aspect-square flex items-center justify-center mt-4">
-              <img src="images/iphone-14.png" alt="" />
+              <img src="images/Iphone-13mini.png" alt="" />
             </div>
             <div class="title flex flex-col items-center gap-3 h-[160px]">
-              <h3 class="font-semibold text-xs md:text-sm text-center">Apple iPhone 14 Pro Max 128GB Deep Purple (MQ9T3RX/A)</h3>
-              <h2 class="font-bold text-xl md:text-2xl text-center">$898</h2>
+              <h3 class="font-semibold text-xs md:text-sm text-center">Apple iPhone 13 Mini 256GB Light Pink (MQ9T98T/C)</h3>
+              <h2 class="font-bold text-xl md:text-2xl text-center">$756</h2>
               <button class="border border-black text-black text-sm rounded-lg px-4 py-2 w- mx-auto mt-4 md:mx-0 hover:bg-black hover:text-white transition-all duration-500 ease-in-out">Buy Now</button>
             </div>
           </div>
+
           <div class="card w-[150px] md:w-[268px] h-[200x] md:h-[432px] rounded-xl bg-[#F6F6F6] py-12 px-4 flex flex-col gap-4 justify-center items-center relative">
             <svg xmlns="http://www.w3.org/2000/svg" class="w-6 fill-slate-400 absolute right-4 top-4 hover:fill-red-500 transition-all duration-300 ease-in-out cursor-pointer" viewBox="0 0 256 256">
               <path
@@ -230,14 +231,15 @@
             </svg>
 
             <div class="image w-full aspect-square flex items-center justify-center mt-4">
-              <img src="images/iphone-14.png" alt="" />
+              <img src="images/iphone-11.png" alt="" />
             </div>
             <div class="title flex flex-col items-center gap-3 h-[160px]">
-              <h3 class="font-semibold text-xs md:text-sm text-center">Apple iPhone 14 Pro Max 128GB Deep Purple (MQ9T3RX/A)</h3>
+              <h3 class="font-semibold text-xs md:text-sm text-center">Apple iPhone 11 128GB Red (M786TC/F)</h3>
               <h2 class="font-bold text-xl md:text-2xl text-center">$898</h2>
               <button class="border border-black text-black text-sm rounded-lg px-4 py-2 w- mx-auto mt-4 md:mx-0 hover:bg-black hover:text-white transition-all duration-500 ease-in-out">Buy Now</button>
             </div>
           </div>
+
           <div class="card w-[150px] md:w-[268px] h-[200x] md:h-[432px] rounded-xl bg-[#F6F6F6] py-12 px-4 flex flex-col gap-4 justify-center items-center relative">
             <svg xmlns="http://www.w3.org/2000/svg" class="w-6 fill-slate-400 absolute right-4 top-4 hover:fill-red-500 transition-all duration-300 ease-in-out cursor-pointer" viewBox="0 0 256 256">
               <path
@@ -245,14 +247,15 @@
             </svg>
 
             <div class="image w-full aspect-square flex items-center justify-center mt-4">
-              <img src="images/iphone-14.png" alt="" />
+              <img src="images/macbook-air.png" alt="" />
             </div>
             <div class="title flex flex-col items-center gap-3 h-[160px]">
-              <h3 class="font-semibold text-xs md:text-sm text-center">Apple iPhone 14 Pro Max 128GB Deep Purple (MQ9T3RX/A)</h3>
-              <h2 class="font-bold text-xl md:text-2xl text-center">$898</h2>
+              <h3 class="font-semibold text-xs md:text-sm text-center">Macbook Air (M89TRX/P)</h3>
+              <h2 class="font-bold text-xl md:text-2xl text-center">$1088</h2>
               <button class="border border-black text-black text-sm rounded-lg px-4 py-2 w- mx-auto mt-4 md:mx-0 hover:bg-black hover:text-white transition-all duration-500 ease-in-out">Buy Now</button>
             </div>
           </div>
+
           <div class="card w-[150px] md:w-[268px] h-[200x] md:h-[432px] rounded-xl bg-[#F6F6F6] py-12 px-4 flex flex-col gap-4 justify-center items-center relative">
             <svg xmlns="http://www.w3.org/2000/svg" class="w-6 fill-slate-400 absolute right-4 top-4 hover:fill-red-500 transition-all duration-300 ease-in-out cursor-pointer" viewBox="0 0 256 256">
               <path
@@ -260,14 +263,15 @@
             </svg>
 
             <div class="image w-full aspect-square flex items-center justify-center mt-4">
-              <img src="images/iphone-14.png" alt="" />
+              <img src="images/apple-ipad.png" alt="" />
             </div>
             <div class="title flex flex-col items-center gap-3 h-[160px]">
-              <h3 class="font-semibold text-xs md:text-sm text-center">Apple iPhone 14 Pro Max 128GB Deep Purple (MQ9T3RX/A)</h3>
-              <h2 class="font-bold text-xl md:text-2xl text-center">$898</h2>
+              <h3 class="font-semibold text-xs md:text-sm text-center">Apple Air 526GB Silver (MQ9U76/I)</h3>
+              <h2 class="font-bold text-xl md:text-2xl text-center">$998</h2>
               <button class="border border-black text-black text-sm rounded-lg px-4 py-2 w- mx-auto mt-4 md:mx-0 hover:bg-black hover:text-white transition-all duration-500 ease-in-out">Buy Now</button>
             </div>
           </div>
+
           <div class="card w-[150px] md:w-[268px] h-[200x] md:h-[432px] rounded-xl bg-[#F6F6F6] py-12 px-4 flex flex-col gap-4 justify-center items-center relative">
             <svg xmlns="http://www.w3.org/2000/svg" class="w-6 fill-slate-400 absolute right-4 top-4 hover:fill-red-500 transition-all duration-300 ease-in-out cursor-pointer" viewBox="0 0 256 256">
               <path
@@ -275,14 +279,15 @@
             </svg>
 
             <div class="image w-full aspect-square flex items-center justify-center mt-4">
-              <img src="images/iphone-14.png" alt="" />
+              <img src="images/apple-watch.png" alt="" />
             </div>
             <div class="title flex flex-col items-center gap-3 h-[160px]">
-              <h3 class="font-semibold text-xs md:text-sm text-center">Apple iPhone 14 Pro Max 128GB Deep Purple (MQ9T3RX/A)</h3>
-              <h2 class="font-bold text-xl md:text-2xl text-center">$898</h2>
+              <h3 class="font-semibold text-xs md:text-sm text-center">Apple Watch Silver (M878TY/A)</h3>
+              <h2 class="font-bold text-xl md:text-2xl text-center">$554</h2>
               <button class="border border-black text-black text-sm rounded-lg px-4 py-2 w- mx-auto mt-4 md:mx-0 hover:bg-black hover:text-white transition-all duration-500 ease-in-out">Buy Now</button>
             </div>
           </div>
+
           <div class="card w-[150px] md:w-[268px] h-[200x] md:h-[432px] rounded-xl bg-[#F6F6F6] py-12 px-4 flex flex-col gap-4 justify-center items-center relative">
             <svg xmlns="http://www.w3.org/2000/svg" class="w-6 fill-slate-400 absolute right-4 top-4 hover:fill-red-500 transition-all duration-300 ease-in-out cursor-pointer" viewBox="0 0 256 256">
               <path
@@ -290,14 +295,15 @@
             </svg>
 
             <div class="image w-full aspect-square flex items-center justify-center mt-4">
-              <img src="images/iphone-14.png" alt="" />
+              <img src="images/camera.png" alt="" />
             </div>
             <div class="title flex flex-col items-center gap-3 h-[160px]">
-              <h3 class="font-semibold text-xs md:text-sm text-center">Apple iPhone 14 Pro Max 128GB Deep Purple (MQ9T3RX/A)</h3>
-              <h2 class="font-bold text-xl md:text-2xl text-center">$898</h2>
+              <h3 class="font-semibold text-xs md:text-sm text-center">Black Magic Pocket cinema kamera 6K</h3>
+              <h2 class="font-bold text-xl md:text-2xl text-center">$788</h2>
               <button class="border border-black text-black text-sm rounded-lg px-4 py-2 w- mx-auto mt-4 md:mx-0 hover:bg-black hover:text-white transition-all duration-500 ease-in-out">Buy Now</button>
             </div>
           </div>
+
           <div class="card w-[150px] md:w-[268px] h-[200x] md:h-[432px] rounded-xl bg-[#F6F6F6] py-12 px-4 flex flex-col gap-4 justify-center items-center relative">
             <svg xmlns="http://www.w3.org/2000/svg" class="w-6 fill-slate-400 absolute right-4 top-4 hover:fill-red-500 transition-all duration-300 ease-in-out cursor-pointer" viewBox="0 0 256 256">
               <path
@@ -305,14 +311,15 @@
             </svg>
 
             <div class="image w-full aspect-square flex items-center justify-center mt-4">
-              <img src="images/iphone-14.png" alt="" />
+              <img src="images/iphone-15promax.png" alt="" />
             </div>
             <div class="title flex flex-col items-center gap-3 h-[160px]">
-              <h3 class="font-semibold text-xs md:text-sm text-center">Apple iPhone 14 Pro Max 128GB Deep Purple (MQ9T3RX/A)</h3>
+              <h3 class="font-semibold text-xs md:text-sm text-center">Apple iPhone 15 Pro Max 1Tb Silver (MQ9T22/AAA)</h3>
               <h2 class="font-bold text-xl md:text-2xl text-center">$898</h2>
               <button class="border border-black text-black text-sm rounded-lg px-4 py-2 w- mx-auto mt-4 md:mx-0 hover:bg-black hover:text-white transition-all duration-500 ease-in-out">Buy Now</button>
             </div>
           </div>
+
           <div class="card w-[150px] md:w-[268px] h-[200x] md:h-[432px] rounded-xl bg-[#F6F6F6] py-12 px-4 flex flex-col gap-4 justify-center items-center relative">
             <svg xmlns="http://www.w3.org/2000/svg" class="w-6 fill-slate-400 absolute right-4 top-4 hover:fill-red-500 transition-all duration-300 ease-in-out cursor-pointer" viewBox="0 0 256 256">
               <path

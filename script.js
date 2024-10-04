@@ -21,3 +21,17 @@ window.addEventListener("scroll", function () {
 
   lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Menghindari nilai negatif pada scrollTop
 });
+
+const openSidebarBtn = document.getElementById("openSidebar");
+const closeSidebarBtn = document.getElementById("closeSidebar");
+const sidebar = document.getElementById("sidebar");
+
+// Function to open the sidebar
+openSidebarBtn.addEventListener("click", () => {
+  sidebar.classList.remove("-translate-x-full");
+});
+
+// Function to close the sidebar
+closeSidebarBtn.addEventListener("click", () => {
+  sidebar.classList.add("-translate-x-full"); // Add the hidden class back
+});
